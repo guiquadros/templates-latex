@@ -1,0 +1,229 @@
+\documentclass[a4paper,twoside]{article}
+
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{calc}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{pslatex}
+%\usepackage{hyperref} % use this for interactive urls and citations
+\usepackage{ICAIIT}   
+
+%%%%%%%%%%%%%%%%%%%%%%%% [configure line numbers on top right]
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt} %remove the fancy line
+
+\subfigtopskip=0pt
+\subfigcapskip=0pt
+\subfigbottomskip=0pt
+%%%%%%%%%%%%%%%%%%%%%%%% [/configure line numbers on top right]
+
+\begin{document}
+
+\title{Dibre - A Arte da Gambiarra}
+
+\author{\authorname{Nome do Autor}
+\affiliation{Centro Universitário Uninter}
+\affiliation{Endereço do Polo}
+\email{e-mail: email@do-autor.com}
+}
+
+\abstract{\textit{\textbf{Resumo:} 
+A palavra gambiarra possui diversos significados, entre os quais os mais predominantes são extensão de luz e, no Brasil, como uma gíria para improvisação (que teria correspondência no termo "desenrascanço", utilizado em Portugal).
+}}
+
+\keywords{\textit{Palavras-chave: dibre, gambiarra, adaptador de tomada de 3 pinos.}}
+
+\onecolumn \maketitle \normalsize \vfill
+
+\section*{Introdução}
+\label{sec:introduction}
+Your paper will be part of the conference proceedings; therefore, we ask that authors follow the guidelines explained in this example, in order to achieve the highest quality possible. Be advised that papers in a technically unsuitable form will be returned for retyping. After returned the manuscript must be appropriately modified. 
+Margins, column widths, line spacing, and type styles are built-in. Some components, such as multi-levelled equations, graphics, and tables are not prescribed, although the various table text styles are provided. The formatter will need to create these components, incorporating the applicable criteria that follow.
+
+\section*{Procedimento Experimental}
+
+We strongly encourage authors to use this document for the preparation of the camera-ready. Please follow the instructions closely in order to make the volume look as uniform as possible.
+Please remember that all the papers must be in English and without orthographic errors.
+Do not add any text to the headers (do not set running heads) and footers, not even page numbers, because text will be added electronically.
+For a best viewing experience the used font must be Times New Roman, on a Macintosh use the font named times, except on special occasions, such as program code (Section \ref{subsubsec:program_code}).
+
+The paper size must be set to A4 (210x297 mm). The document
+margins must be the following:
+
+\begin{itemize}
+    \item Top: 3,3 cm;
+    \item Bottom: 4,2 cm;
+    \item Left: 2,6 cm;
+    \item Right: 2,6 cm.
+\end{itemize}
+
+It is advisable to keep all the given values.
+
+
+Regarding the page layout, authors should set the Section Start to Continuous with the vertical alignment to the top and the following header and footer:
+
+\begin{itemize}
+    \item Header: 1,4 cm;
+    \item Footer: 2,5 cm.
+\end{itemize}
+
+Any text or material outside the aforementioned margins will not be printed.
+
+
+Use the command \textit{$\backslash$title} and follow the given structure in "example.tex". The title and subtitle must be with initial letters
+capitalized (titlecased). If no subtitle is required, please remove the corresponding \textit{$\backslash$subtitle} command. In the title or subtitle, words like "is", "or", "then", etc. should not be capitalized unless they are the first word of the subtitle. No formulas or special characters of any form or language are allowed in the title or subtitle.
+
+The final sentence of a caption should end with a period.
+
+\begin{table}[h]
+\caption{This caption has one line so it is
+centered.}\label{tab:example1} \centering
+\begin{tabular}{|c|c|}
+  \hline
+  Example column 1 & Example column 2 \\
+  \hline
+  Example text 1 & Example text 2 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{This caption has more than one line so it has to be
+justified.}\label{tab:example2} \centering
+\begin{tabular}{|c|c|}
+  \hline
+  Example column 1 & Example column 2 \\
+  \hline
+  Example text 1 & Example text 2 \\
+  \hline
+\end{tabular}
+\end{table}
+
+Please note that the word "Table" is spelled out.
+
+\section*{Análise e Resultados}
+
+Please produce your figures electronically, and integrate them into
+your document and zip file.
+
+Check that in line drawings, lines are not interrupted and have a
+constant width. Grids and details within the figures must be clearly
+readable and may not be written one on top of the other.
+
+Figure resolution should be at least 300 dpi.
+
+Figures must appear inside the designated margins or they may span
+the two columns.
+
+Figures in two columns must be positioned at the top or bottom of
+the page within the given margins. To span a figure in two columns please add an asterisk (*) to the figure \textit{begin} and \textit{end} command.
+
+Example: \textit{$\backslash$begin\{figure*\}}
+
+\hspace*{1.5cm}\textit{$\backslash$end\{figure*\}}
+
+Figures should be centered and should always have a caption
+positioned under it. The font size to use is 9-point. No bold or
+italic font style should be used.
+
+\begin{figure}[!h]
+  %\vspace{-0.2cm}
+  \centering
+   \includegraphics[width=5.5 cm]{ICAIIT.png}
+  \caption{This caption has one line so it is centered.}
+  \label{fig:example1}
+ \end{figure}
+
+\begin{figure}[!h]
+  \vspace{-0.2cm}
+  \centering
+   \includegraphics[width=5.5 cm]{ICAIIT.png}
+  \caption{This caption has more than one line so it has to be justified.}
+  \label{fig:example2}
+  \vspace{-0.1cm}
+\end{figure}
+
+The final sentence of a caption should end with a period.
+
+
+
+Please note that the word "Figure" is spelled out.
+
+EQUATIONS
+
+Equations should be placed on a separate line, numbered and
+centered.\\The numbers accorded to equations should appear in
+consecutive order inside each section or within the contribution,
+with the number enclosed in brackets and justified to the right,
+starting with the number 1.
+
+Example:
+
+\begin{equation}\label{eq1}
+    a=b+c
+\end{equation}
+
+Program Code
+
+Program listing or program commands in text should be set in
+typewriter form such as Courier New.
+
+Example of a Computer Program in Pascal:
+
+\begin{small}
+\begin{verbatim}
+ Begin
+     Writeln('Hello World!!');
+ End.
+\end{verbatim}
+\end{small}
+
+
+The text must be aligned to the left and in 9-point type.
+
+Reference Text and Citations
+
+Papers must have between 10 to 30 references. Try to exclude links to online resources and national non-translated publications. At least the half of the references must be published within the last 5-7 years are included in the WoS and SCOPUS provided DOI number. The template will number citations consecutively within brackets \cite{eason1955certain} (IEEE style, see more - https://www.zotero.org/styles/ieee). The sentence punctuation follows the bracket \cite{maxwell1873treatise}. Refer simply to the reference number, as in \cite{maxwell1873treatise} --- do not use “Ref. \cite{maxwell1873treatise}” or “reference \cite{maxwell1873treatise}” except at the beginning of a sentence: “Reference \cite{maxwell1873treatise} was the first ...”
+
+
+Number footnotes separately in superscripts. Place the actual footnote at the bottom of the column in which it was cited. Do not put footnotes in the reference list. Use letters for table footnotes.
+
+
+Unless there are six authors or more give all authors’ names; do not use “et al.”. Papers that have not been published, even if they have been submitted for publication, should be cited as “unpublished”. Papers that have been accepted for publication should be cited as “in press”. Capitalize only the first word in a paper title, except for proper nouns and element symbols.
+
+
+For papers published in translation journals, please give the English citation \cite{yorozu1987electron}.
+
+
+Unless there are six authors or more give all authors’ names; do not use “et al.”.
+
+
+\section*{Conclusão}
+\label{sec:conclusion}
+
+Please note that ONLY the files required to compile your paper should be submitted. Previous versions or examples MUST be removed from the compilation directory before submission.
+
+We hope you find the information in this template useful in the preparation of your submission.
+
+
+\bibliographystyle{IEEEtran} % TODO:achar um jeito de carregar todas as referencias do arquivo sem que elas precisem estar citadas no texto OU citar na introdução algo de todas as referências
+{\small
+\bibliography{refs01}}
+
+%\begin{thebibliography}{999}
+%\bibitem[1]G. Eason, B. Noble, and I.N. Sneddon, “On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,” Phil. Trans. Roy.
+%\bibitem[2]J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68-73.
+%\end{thebibliography}
+
+
+\vfill
+\end{document}
+
